@@ -19,16 +19,6 @@ function filterAdresses($mas, $forSearch)
     return $mas;
 }
 
-function filterShopname($mas, $forSearch)
-{
-    foreach ($mas as $k => $v) {
-        if (strpos($v->shopname, $forSearch) === false) {
-            unset($mas[$k]);
-        }
-    }
-    return $mas;
-}
-
 function filterColors($mas, $forSearch)
 {
     foreach ($mas as $k => $v) {
